@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Lista de tareas</h1>
+        </div>
+        
+        <div class="datos">
+            <p id="total">Listadas: 0</p>
+            <p id="completadas">Terminadas: 0</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <form class="formulario" id="formulario">
+                <input type="text" id="tarea">
+                <button class="Agregar" data-id="${item.id}">+</button>
+            </form>
+    
+            <div class="tareas" id="tareas">
+                <div class="item-tarea">
+                    <p>Tarea 1</p>
+                    <div class="botones">
+                        <button class="eliminar" data-id="${item.id}">x</button>
+                        <button class="completada" data-id="${item.id}">?</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
