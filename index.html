@@ -5,38 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de tareas</title>
-    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/script.js"></script>
 </head>
 
 <body>
     <header>
-        <div>
+        <div class="div-h1">
             <h1>Lista de tareas</h1>
-        </div>
-        
-        <div class="datos">
-            <p id="total">Listadas: 0</p>
-            <p id="completadas">Terminadas: 0</p>
         </div>
     </header>
 
     <main>
-        <div class="contenedor">
-            <form class="formulario" id="formulario">
-                <input type="text" id="tarea">
-                <button class="Agregar" data-id="${item.id}">+</button>
-            </form>
+        <section class="contenedor">
+            <div class="div-form">
+                <input type="text" id="tarea"placeholder="Agrega una tarea...">
+                <button class="agregar" id="btnAgregar"> + </button>
+            </div>
     
             <div class="tareas" id="tareas">
-                <div class="item-tarea">
-                    <p>Tarea 1</p>
-                    <div class="botones">
-                        <button class="eliminar" data-id="${item.id}">x</button>
-                        <button class="completada" data-id="${item.id}">?</button>
-                    </div>
-                </div>
+                <p>Tus tareas</p>
+                <ul id="listado">  </ul>
             </div>
-        </div>
+        </section>
     </main>
 </body>
 </html>
