@@ -142,3 +142,12 @@ input[type="text"] {
 #elemento {
   list-style: none;
 }
+
+/* FORMULARIO EDITAR */
+ .oculto {
+  display: none;
+ }
+
+ .disponible {
+  display: block;
+ }
