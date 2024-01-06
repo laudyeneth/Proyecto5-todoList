@@ -20,4 +20,5 @@ Instrucciones de Uso:
 •	Luego se abre el archivo index.html en el navegador web.
 
 Nota: sin embargo, la aplicación será alojada en Git Hub Pages, para ser usada, el link es:
+https://laudyeneth.github.io/Proyecto5-todoList/
 
