@@ -46,20 +46,22 @@ window.onload = function () {
         if(tarea.valor) {
             const elemento = `
                             <li id="elemento">
-                            <button class="terminar" id="btn-terminar${id}" data-id="${id}">✔</button> 
-                            <p>${tarea.completado ? (
-                                `<span class='completa' id="valor${id}">${tarea.valor}</span>`
-                            ) : (
-                                `<span class='incompleta' id="valor${id}">${tarea.valor}</span>`
-                            )}</p>
-                            <button class="eliminar" id="btn-eliminar${id}" data-id="${id}">--</button>
-                            <button class="editar" id="btn-editar${id}" data-id="${id}">Editar Tarea</button>
+                            
+                                <p>${tarea.completado ? (
+                                    `<span class='completa' id="valor${id}">${tarea.valor}</span>`
+                                ) : (
+                                    `<span class='incompleta' id="valor${id}">${tarea.valor}</span>`
+                                )}</p>
+                               
+                                <button class="terminar" id="btn-terminar${id}" data-id="${id}">✓</button> 
+                                <button class="eliminar" id="btn-eliminar${id}" data-id="${id}">—</button>
+                                <button class="editar" id="btn-editar${id}" data-id="${id}">Editar</button>
 
-                            <form id="formedit${id}" class="oculto">
-                                <input type="text" id="nuevovalor${id}" data-id="${id}" value="${tarea.valor}" "/>
-                                <button class="guardar" data-id="${id}">Guardar</button>
-                                <button class="cancelar" data-id="${id}" type="button">Cancelar</button>
-                            </form>
+                                <form id="formedit${id}" class="oculto">
+                                    <input type="text" id="nuevovalor${id}" data-id="${id}" value="${tarea.valor}" "/>
+                                    <button class="guardar" data-id="${id}">Guardar</button>
+                                    <button class="cancelar" data-id="${id}" type="button">Cancelar</button>
+                                </form>
                             </li>
                             `;
             listado.insertAdjacentHTML("beforeend", elemento);
